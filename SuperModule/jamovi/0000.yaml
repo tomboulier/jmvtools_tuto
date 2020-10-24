@@ -1,0 +1,24 @@
+---
+title: Test t pour échantillons indépendants
+name: SuperModule
+version: 0.0.0
+jms: '1.0'
+authors:
+  - Thomas Boulier
+maintainer: Thomas Boulier <boulier.thomas@gmail.com>
+date: '2020-10-24'
+type: R
+description: >-
+  Module simple permettant de faire un test t pour échantillons indépendants.
+  Créé en suivant le tutoriel suivant :
+  https://dev.jamovi.org/tuts0101-getting-started.html
+analyses:
+  - title: Test t pour échantillons indépendants
+    name: ttest
+    ns: SuperModule
+    menuGroup: SuperModule
+    menuTitle: Test t pour échantillons indépendants
+usesNative: true
+minApp: 1.0.8
+
+...

@@ -1,0 +1,31 @@
+---
+name:  ttest
+title: Test t pour échantillons indépendants
+jrs:   '1.1'
+
+items:
+    - name:  text
+      title: Test t pour échantillons indépendants
+      type:  Preformatted
+    - name:  table
+      title: Test t pour échantillons indépendants
+      type: Table
+      rows:  1
+      columns:
+        - name: var
+          title: ''
+          type: text
+        - name: t
+          type: number
+        - name: degrés de liberté
+          type: integer
+        - name: p
+          type: number
+          format: zto,pvalue
+    - name: plot
+      title: Figure descriptive
+      type: Image
+      width:  400
+      height: 300
+      renderFun: .plot
+...

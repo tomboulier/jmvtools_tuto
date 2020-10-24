@@ -1,0 +1,36 @@
+---
+name:  ttest
+title: Test t pour échantillons indépendants
+menuGroup: SuperModule
+version: '1.0.0'
+jas: '1.2'
+
+options:
+    - name: data
+      type: Data
+
+    - name: dep
+      title: Variable dépendante
+      type: Variable
+
+    - name: group
+      title: Variable de groupement
+      type: Variable
+
+    - name: alt
+      title: Hypothèse alternative
+      type: List
+      options:
+        - title: X1 ≠ X2
+          name:  notequal
+        - title: X1 > X2
+          name:  onegreater
+        - title: X2 > X1
+          name:  twogreater
+      default: notequal
+
+    - name: varEq
+      title: Supposer l'égalité des variances
+      type: Bool
+      default: true
+... 
